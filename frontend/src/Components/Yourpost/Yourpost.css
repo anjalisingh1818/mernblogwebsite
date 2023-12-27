@@ -1,0 +1,39 @@
+
+ .yourpost h2{
+  margin: auto 12%;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(255, 255, 255)
+}
+
+.msg{
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 50px;
+  word-spacing: 10px;
+  width: 600px;
+  margin-left: 310px;
+  background-color: rgb(35, 77, 92);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-top: 100px;
+  padding: 40px;
+}
+.createbtn{
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.yourpost h2{
+  color: rgb(255, 255, 255);
+}
+.yourpost{
+  background-color: rgb(0, 0, 0);
+}

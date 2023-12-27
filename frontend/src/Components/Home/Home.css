@@ -1,0 +1,57 @@
+
+.Home{
+display: grid;
+grid-template: 1fr 1fr 1fr 1fr;
+background: url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8193.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702598400&semt=ais");
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.Home h2{
+    margin: auto 12%;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    position:static;
+    margin-left: 8;
+
+}
+.head-div{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:400px;
+    margin:40px
+}
+.ig-div{
+    flex:1;
+    position:static;
+    
+}
+.ig{
+   
+    flex:1;
+    height:20vh;
+
+}
+.h-head{
+  
+    font-size: 52px;
+    left:100px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    line-height: 90px;
+    margin-top: 100px;
+   color: azure;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.h-head span{
+    position: absolute;
+    top:230px;
+    left:55px;
+    color:black
+}

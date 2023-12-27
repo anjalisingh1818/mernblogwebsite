@@ -1,0 +1,55 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: 0 1px 2px -2px black;
+    height: 8vh;
+}
+.nav-logo{
+display: flex;
+height: 65px;
+
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:50px;
+    color: rgb(81, 81, 81);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3px;
+    cursor: pointer;
+}
+.nav-menu hr{
+    border:none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(79, 127, 183);
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap:45px;
+
+}
+.nav-login-bt button{
+    width:157px;
+    height:58px;
+    outline: none;
+    border: 1px solid rgb(175, 183, 191);
+    border-radius: 75px;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}

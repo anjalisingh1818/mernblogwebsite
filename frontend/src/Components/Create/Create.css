@@ -1,0 +1,70 @@
+
+.create{
+    width:100%;
+    height:60vh;
+    background: transparent;
+    
+}
+.create-conatiner{
+    width:700px;
+    height: 520px;
+    background-image:url( "https://img.freepik.com/free-photo/makeup-brush-eyeglasses-cactus-plant-white-flower-bouquet-with-laptop-blue-background_23-2148178672.jpg?w=1380&t=st=1702742561~exp=1702743161~hmac=92c738afc6f555d3f86f3e4cab7980e62a8fcb0165c8054aef3f8d9964b31de7");
+    margin: auto;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.create-conatiner h1{
+
+    margin: 20px 0px;
+    color: rgb(1, 88, 146);
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3.5px;
+}
+.create-conatiner hr{
+   width:300px;
+   margin-right:90%;
+}
+.create-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 15px auto;
+}
+.create-fields input{
+    background: whitesmoke;
+    padding: 15px auto;
+    height:50px;
+    width: 100%;
+    border:1px solid rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.create-conatiner button{
+    width:700px;
+    height:52px;
+    color: white;
+    background:rgb(53, 139, 197);
+    margin-top: 30px;
+    border:none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-login{
+    margin-top: 10px;
+    color:darkgray;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+textarea{
+    background: whitesmoke;
+    font-size: 15px;
+    padding: 5px;
+}

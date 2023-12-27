@@ -1,0 +1,66 @@
+.Postcard {
+  margin: 10px auto;
+  padding: 4rem 0;
+  width: 100%;
+  max-width: 68rem;
+  background-color:whitesmoke;
+  padding: 5px;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.pc-left {
+  flex: 1;
+  margin: 2px;
+}
+.pc-left img {
+  
+  width: 550px;
+  height:100%;
+  max-height: 20rem;
+  border: 5px solid rgba(81, 202, 233, 0.816);
+ 
+
+}
+.pc-right {
+  flex: 1;
+  
+  margin:auto 4px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.pc-right h3 {
+  color: rgba(0, 0, 0, 0.816);
+  font-size: 30px;
+  letter-spacing: 3.5px;
+  word-spacing: 4px;
+  text-transform: capitalize;
+}
+.pc-right p {
+  font-weight: 400;
+  background-color:rgba(170, 198, 220, 0.488) ;
+  color: rgb(8, 79, 125);
+ 
+  border-radius: 10px;
+  margin: 2px;
+  line-height: 2;
+}
+
+.pc-right h5 {
+  margin-bottom: 0;
+}
+.btn {
+  gap: 40px;
+}
+.btn img {
+  height: 40px;
+  padding: auto 20px;
+  margin-bottom: 100px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
+
+
