@@ -29,9 +29,9 @@ routes.post('/create/:id',async(req,res)=>{
             image:image,
             author:id
         })
-        console.log(newBlog)
+       
         newBlog.save();
-       console.log(newBlog)
+    
         res.status(201).json(newBlog)
        }catch(err){
         res.status(400).json({error:"Error!"});
@@ -44,7 +44,7 @@ routes.get('/:blogid',async(req,res)=>{
         res.status(200).json(findBlog);
          }catch(err){
              res.status(400).json({err:err.message});
-             console.log(err.message)
+         
          }
      
 })

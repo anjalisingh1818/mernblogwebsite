@@ -34,7 +34,7 @@ const Edit = () => {
       },
     });
     const result = await response.json();
-    console.log(result)
+
     if (!response.ok) {
       seterror(result.error)
       setTimeout(() => {
@@ -48,7 +48,7 @@ const Edit = () => {
     }
   };
   useEffect(() => {
-    console.log(id)
+  
     getSingleBlog(id);
   }, []);
 

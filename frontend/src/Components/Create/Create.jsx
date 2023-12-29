@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Create.css";
-import { useUserId } from "../../Context/userContext";
+
 import { useAuth } from "../../Context/authContext";
 const Create = () => {
   const baseurl = process.env.REACT_APP_BASE_URL;
- const [auth,setuth]=useAuth();
+ const [auth]=useAuth();
   const [title, settitle] = useState("");
   const [image, setimage] = useState("");
   const [desc, setdesc] = useState("");
   const navigate = useNavigate();
   const [error, seterror] = useState();
 
-  // const {id}=useParams()
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(baseurl);
+  
     const addblog = { title, image, desc };
     const response = await fetch(`${baseurl}/blog/create/${auth.user._id}`, {
       method: "POST",
       body: JSON.stringify(addblog),
       headers: {
-        "Content-type": "application/json", //to save from cors issues
+        "Content-type": "application/json", 
       },
     });
     const result = await response.json();
@@ -34,7 +34,7 @@ const Create = () => {
 
     if (response.ok) {
       seterror("");
-      console.log(result);
+   
       navigate("/");
     }
   };

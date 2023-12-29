@@ -16,7 +16,7 @@ routes.post("/login", async function (req, res) {
   }
   try {
     const user = await User.findOne({ email: email });
-    console.log(user);
+  
     if (user) {
       const result = await bcrypt.compare(password, user.password);
 

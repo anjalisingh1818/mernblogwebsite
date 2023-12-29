@@ -36,8 +36,6 @@ const Login = () => {
     if (res.ok) {
      seterror("");
      setData(result);
-    
-     console.log(result)
      setauth({
       ...auth,
       user: result.user,

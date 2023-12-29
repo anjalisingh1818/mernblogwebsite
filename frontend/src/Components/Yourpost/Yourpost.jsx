@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Yourpost.css";
-import { Link, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Postcard from "../Po/Postcard";
 
 import { useAuth } from "../../Context/authContext";
 const Yourpost = () => {
-  const [auth, setauth] = useAuth();
+  const [auth] = useAuth();
 
   const baseurl = process.env.REACT_APP_BASE_URL;
   const seteditdelete = true;
@@ -20,13 +20,12 @@ const Yourpost = () => {
     });
     const result = await response.json();
   
-    console.log("ido" + ido);
     if (!response.ok) {
       seterror(result.error);
     }
     if (response.ok) {
       seterror("");
-      console.log(result);
+
       setTimeout(() => {
         seterror("");
         getData();
@@ -35,7 +34,7 @@ const Yourpost = () => {
   }
   async function getData() {
     setload(true)
-    console.log(baseurl);
+
     const response = await fetch(`${baseurl}/blog/show/${auth.user._id}`, {
       method: "GET",
     });

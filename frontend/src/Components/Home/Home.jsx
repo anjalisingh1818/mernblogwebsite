@@ -30,13 +30,13 @@ const Home = () => {
       method: "DELETE",
     });
     const result = await response.json();
-    console.log("ido" + ido);
+   
     if (!response.ok) {
       seterror(result.seterror);
     }
     if (response.ok) {
       seterror("");
-      console.log(result);
+     
       setTimeout(() => {
         seterror("");
         getData();
